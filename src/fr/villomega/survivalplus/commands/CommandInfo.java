@@ -1,5 +1,6 @@
-package fr.villomega.survivalplus;
+package fr.villomega.survivalplus.commands;
 
+import fr.villomega.survivalplus.SurvivalPlus;
 import org.bukkit.Bukkit;
 import org.bukkit.World;
 import org.bukkit.command.Command;

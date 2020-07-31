@@ -1,5 +1,6 @@
-package fr.villomega.survivalplus;
+package fr.villomega.survivalplus.commands;
 
+import fr.villomega.survivalplus.SurvivalPlus;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.World;
@@ -13,7 +14,7 @@ import org.bukkit.entity.Player;
 import java.io.File;
 
 public class CommandHome implements CommandExecutor {
-    private  SurvivalPlus survivalPlus;
+    private SurvivalPlus survivalPlus;
     public CommandHome(SurvivalPlus survivalPlus) {
         this.survivalPlus = survivalPlus;
     }

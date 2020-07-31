@@ -1,5 +1,6 @@
-package fr.villomega.survivalplus;
+package fr.villomega.survivalplus.commands;
 
+import fr.villomega.survivalplus.SurvivalPlus;
 import org.bukkit.Location;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -12,7 +13,7 @@ import java.io.IOException;
 
 public class CommandSethome implements CommandExecutor {
 
-    private  SurvivalPlus survivalPlus;
+    private SurvivalPlus survivalPlus;
     public CommandSethome(SurvivalPlus survivalPlus){
         this.survivalPlus = survivalPlus;
     }

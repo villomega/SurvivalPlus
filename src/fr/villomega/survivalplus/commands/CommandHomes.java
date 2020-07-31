@@ -1,6 +1,7 @@
-package fr.villomega.survivalplus;
+package fr.villomega.survivalplus.commands;
 
 import com.mysql.fabric.xmlrpc.base.Array;
+import fr.villomega.survivalplus.SurvivalPlus;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
