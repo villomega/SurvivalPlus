@@ -1,0 +1,15 @@
+name: SurvivalPlus
+author: villomega
+version: "1.0"
+main: fr.villomega.survivalplus.SurvivalPlus
+commands:
+  sethome:
+    description: Pour créer un home
+  home:
+    description: Se tp aux home
+  delhome:
+    description: Suprimmer un home
+  share:
+    description: Partager quelque chose
+  homes:
+    description: Voir la liste des homes
