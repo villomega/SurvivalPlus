@@ -13,3 +13,5 @@ commands:
     description: Partager quelque chose
   homes:
     description: Voir la liste des homes
+  info:
+    description: Recevoir les informations d'une donnée

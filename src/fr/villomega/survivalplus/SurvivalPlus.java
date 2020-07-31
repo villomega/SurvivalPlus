@@ -12,6 +12,7 @@ public class SurvivalPlus extends JavaPlugin {
         getCommand("delhome").setExecutor(new CommandDelHome(this));
         getCommand("share").setExecutor(new CommandShare(this));
         getCommand("homes").setExecutor(new CommandHomes(this));
+        getCommand("info").setExecutor(new CommandInfo(this));
     }
 
     @Override
