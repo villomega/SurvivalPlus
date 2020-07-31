@@ -1,6 +1,8 @@
 package fr.villomega.survivalplus;
 
 import fr.villomega.survivalplus.commands.*;
+import fr.villomega.survivalplus.listeners.DeathEvent;
+import fr.villomega.survivalplus.listeners.PlayerEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
@@ -17,6 +19,10 @@ public class SurvivalPlus extends JavaPlugin {
         getCommand("share").setExecutor(new CommandShare(this));
         getCommand("homes").setExecutor(new CommandHomes(this));
         getCommand("info").setExecutor(new CommandInfo(this));
+        getCommand("respawn").setExecutor(new CommandRespawn(this));
+
+        Bukkit.getServer().getPluginManager().registerEvents(new PlayerEvent(), this);
+        Bukkit.getServer().getPluginManager().registerEvents(new DeathEvent(this), this);
 
         ShapedRecipe selle = new ShapedRecipe(new ItemStack(Material.SADDLE));
         selle.shape("CCC", "FFF", "DDD");
