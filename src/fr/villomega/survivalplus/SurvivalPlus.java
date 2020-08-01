@@ -1,6 +1,7 @@
 package fr.villomega.survivalplus;
 
 import fr.villomega.survivalplus.commands.*;
+import fr.villomega.survivalplus.commands.CommandSpeedAxe;
 import fr.villomega.survivalplus.listeners.DeathEvent;
 import fr.villomega.survivalplus.listeners.PlayerEvent;
 import org.bukkit.Bukkit;
@@ -20,6 +21,7 @@ public class SurvivalPlus extends JavaPlugin {
         getCommand("homes").setExecutor(new CommandHomes(this));
         getCommand("info").setExecutor(new CommandInfo(this));
         getCommand("respawn").setExecutor(new CommandRespawn(this));
+        getCommand("speedaxe").setExecutor(new CommandSpeedAxe());
 
         Bukkit.getServer().getPluginManager().registerEvents(new PlayerEvent(), this);
         Bukkit.getServer().getPluginManager().registerEvents(new DeathEvent(this), this);

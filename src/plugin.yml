@@ -17,3 +17,5 @@ commands:
     description: Recevoir les informations d'une donnée
   respawn:
     description: Permet de se téléporter à son lieu de mort (coute 1 bloc de diamand)
+  speedaxe:
+    description: Give une pioche surcheaté
